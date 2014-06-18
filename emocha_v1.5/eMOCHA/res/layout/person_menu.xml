@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/personalOuterRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="#0D5569">
+
+    <TextView
+        android:id="@+id/appStatDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appStatDayText"
+        android:text="3 FEB 2014"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/appStatDayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="71dp"
+        android:text="MONDAY"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/innerFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#000000" >
+
+        <ImageView
+            android:id="@+id/appVideoRecordRedCircle"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/app_video_record_redcircle" />
+
+        <ImageView
+            android:id="@+id/appVideoRecordWhiteLine"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+ 			android:layout_gravity="center_horizontal"
+            android:src="@drawable/app_video_record_whiteline" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appStatDateText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip" >
+
+            <ImageView
+                android:id="@+id/appWaterImageView"
+                android:layout_width="34dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/water" />
+
+            <TextView
+                android:id="@+id/appStatsWaterText"
+                android:layout_width="wrap_content"
+                android:text="Water"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip" >
+
+            <ImageView
+                android:id="@+id/appPill1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/pill" />
+
+            <TextView
+                android:id="@+id/appStatsPillText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="linezolid"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip" >
+
+            <ImageView
+                android:id="@+id/appPill2"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/pill" />
+
+            <TextView
+                android:id="@+id/appStatsPillText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bedaquiline"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip" >
+
+            <ImageView
+                android:id="@+id/appPill3"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/pill" />
+
+            <TextView
+                android:id="@+id/appStatsPillText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PZA"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip" >
+
+            <ImageView
+                android:id="@+id/appPill4"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/pill" />
+
+            <TextView
+                android:id="@+id/appStatsPillText4"
+                android:text="levofloxacin"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+        </TableRow>
+    </TableLayout>
+    
+    <TextView
+        android:id="@+id/personTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your medicine for"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

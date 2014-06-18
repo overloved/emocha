@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 University of Washington
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not
+use this file except in compliance with the License. You may obtain a copy of
+the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations under
+the License.
+-->
+<RelativeLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:background="#0D5569">
+    
+  	<TextView
+        android:id="@+id/appStatDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appStatDayText"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/appStatDayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="71dp"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appStatDateText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip" >
+
+            <ImageView
+                android:id="@+id/appWaterImageView"
+                android:layout_width="34dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/water" />
+
+            <TextView
+                android:id="@+id/appStatsWaterText"
+                android:layout_width="wrap_content"
+                android:text="Water"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip" >
+
+            <ImageView
+                android:id="@+id/appPill1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/pill" />
+
+            <TextView
+                android:id="@+id/appStatsPillText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="linezolid"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip" >
+
+            <ImageView
+                android:id="@+id/appPill2"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/pill" />
+
+            <TextView
+                android:id="@+id/appStatsPillText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bedaquiline"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip" >
+
+            <ImageView
+                android:id="@+id/appPill3"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/pill" />
+
+            <TextView
+                android:id="@+id/appStatsPillText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PZA"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip" >
+
+            <ImageView
+                android:id="@+id/appPill4"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/pill" />
+
+            <TextView
+                android:id="@+id/appStatsPillText4"
+                android:text="levofloxacin"
+                android:textSize="24sp"
+                android:textColor="@android:color/white" />
+        </TableRow>
+    </TableLayout>
+    
+    <TextView
+        android:id="@+id/personTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your medicine for"
+        android:textColor="@android:color/white" />
+
+    <FrameLayout
+        android:id="@+id/slideFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="37dp" >
+
+        <ImageView
+            android:id="@+id/slide_layer3"
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/swipe3" />
+
+        <ImageView
+            android:id="@+id/slide_layer2"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/swipe2_animate" />
+
+        <ImageView
+            android:id="@+id/slide_layer1"
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/swipe1" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/slideText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:text="@string/swipe_info"
+        android:textColor="@android:color/white" />
+	
+ </RelativeLayout>

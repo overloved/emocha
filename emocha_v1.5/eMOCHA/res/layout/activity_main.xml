@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="#0D5569" >
+
+    <ImageView
+        android:id="@+id/appEmochaTM"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/app_emocha_logo" />
+
+    <ImageView
+        android:id="@+id/appMidotLogo"
+        android:layout_width="206dip"
+        android:layout_height="206dip"
+        android:src="@drawable/app_midot_logo" />
+
+</RelativeLayout>

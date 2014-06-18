@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.emocha.midot" android:versionCode="1" android:versionName="1.0.1">
+	<application
+		android:icon="@drawable/icon_desktop"
+		android:label="@string/app_name"
+		android:debuggable="false"
+		android:process="org.emocha"
+		android:name="org.emocha.EmochaApp"
+		>
+		<activity
+			android:name="org.emocha.activities.Initial"
+			android:label="@string/app_name"
+			android:theme="@style/EmochaTheme"
+			android:configChanges="orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity android:name="org.emocha.activities.MainMenu"></activity>
+		<activity android:name="org.emocha.activities.PersonalMenu"></activity>
+		<activity android:name="org.emocha.activities.CountDown"></activity>
+		<activity
+			android:name="org.emocha.activities.VideoCaptureActivity"
+			android:label="@string/app_name"
+			android:theme="@style/EmochaTheme"
+			android:configChanges="orientation"/>
+		<activity
+			android:name="org.emocha.c2dm.activities.FormReminderActivity"
+			android:label="@string/app_name"
+			android:theme="@android:style/Theme.Dialog"
+			android:configChanges="orientation"/>
+		<activity
+			android:name="org.emocha.c2dm.activities.CustomMessageActivity"
+			android:label="@string/app_name"
+			android:theme="@android:style/Theme.Dialog"
+			android:configChanges="orientation"/>
+		<activity android:name="org.emocha.activities.SyncProcess"></activity>
+		<activity android:name="org.emocha.activities.TotalProgress"></activity>
+				
+		<service android:name="org.emocha.services.ServerService" />
+		<service android:name="org.emocha.services.LocationService" />
+		<service android:name="org.emocha.services.GenerateAlarmsService" />
+		<service android:name="org.emocha.services.LogReminderService" />
+	 	<receiver android:name="org.emocha.receivers.FormReminderReceiver"/>
+	 	
+		<receiver android:name="org.emocha.receivers.OnBootReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+		</receiver>
+	 	
+		<receiver android:name="org.emocha.receivers.GpsReceiver"/>
+		
+		<!-- ODK activities -->
+		<activity 
+			android:name="org.odk.collect.android.activities.FormEntryActivity" 
+			android:label="@string/app_name"
+			android:theme="@android:style/Theme.Light"/>
+		<activity 
+			android:name="org.odk.collect.android.activities.FormHierarchyActivity" 
+			android:label="@string/app_name"
+			android:theme="@android:style/Theme.Light"/>
+    	<activity 
+    		android:name="org.odk.collect.android.activities.GeoPointActivity" 
+    		android:label="@string/app_name"
+    		android:theme="@android:style/Theme.Light"/>
+    	
+    	<!-- C2DM start -->
+		<service android:name="org.emocha.c2dm.C2DMReceiver" />
+		<receiver android:name="com.google.android.c2dm.C2DMBroadcastReceiver"  
+				  android:permission="com.google.android.c2dm.permission.SEND">
+          <!-- Receive the actual message -->
+          <intent-filter>
+              <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+              <category android:name="org.emocha.midot" />
+          </intent-filter>
+          <!-- Receive the registration id -->
+          <intent-filter>
+              <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+              <category android:name="org.emocha.midot" />
+          </intent-filter>
+        </receiver> 
+   		<!-- end C2DM -->
+	</application>
+	
+	<!-- C2DM start -->
+   	<permission android:name="org.emocha.midot.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+   	<uses-permission android:name="org.emocha.midot.permission.C2D_MESSAGE"/>
+   	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+  	<uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+  	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<!-- end C2DM -->
+	
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+		
+	<supports-screens 
+	    android:resizeable="true"
+		android:smallScreens="true"
+		android:normalScreens="true"
+		android:largeScreens="true" />
+	<uses-sdk android:minSdkVersion="9"/>
+</manifest>

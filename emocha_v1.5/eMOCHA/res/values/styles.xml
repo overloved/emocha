@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<color
+		name="standard_blue">#3297d7</color>
+	<color
+		name="standard_grey">#a3a3a3</color>
+	<color
+		name="subtitle_color">#3cabfc</color>
+	<color
+		name="standard_darkgrey">#222222</color>
+	<color
+		name="hopkins_blue">#276FFF</color>
+	<color
+		name="background">#FFFFFF</color>
+	<color
+		name="household_background">#91DB7F</color>	
+	<style
+		name="BigButton">
+		<item
+			name="android:textSize">20sp</item>
+		<item
+			name="android:textColor">#00276F</item>
+	</style>
+	<style
+		name="CustomButton">
+		<item
+			name="android:background">@drawable/add_patient_btn </item>
+		<item
+			name="android:textSize">@dimen/button_label</item>
+		<item
+			name="android:height">@dimen/button_height</item>
+	</style>
+	<style
+		name="CustomButtonSmall">
+		<item
+			name="android:textSize">@dimen/button_label_small </item>
+	</style>
+
+
+	<style
+		name="EmochaTheme"
+		parent="android:Theme">
+		<item
+			name="android:windowNoTitle">true</item>
+		<item name="android:windowFullscreen">true</item>
+       <item name="android:windowBackground">@color/blue</item>
+       
+	</style>
+
+
+	<style
+		name="WeightedAddButton">
+		<item
+			name="android:text">Add</item>
+		<item
+			name="android:textSize">@dimen/button_label_small
+		</item>
+		<item
+			name="android:layout_marginRight">3dp</item>
+		<item
+			name="android:layout_width">0dp</item>
+		<item
+			name="android:layout_height">wrap_content</item>
+		<item
+			name="android:layout_weight">1</item>
+		<item
+			name="android:drawableLeft">@drawable/add_32</item>
+		<item
+			name="android:drawablePadding">6dp</item>
+	</style>
+
+	<style
+		name="WeightedCancelButton"
+		parent="@style/WeightedAddButton">
+		<item
+			name="android:text">Cancel</item>
+		<item
+			name="android:drawableLeft">@drawable/close_32</item>
+	</style>
+
+	<style
+		name="WeightedEditButton"
+		parent="@style/WeightedAddButton">
+		<item
+			name="android:text">Edit</item>
+		<item
+			name="android:drawableLeft">@drawable/hammer_32</item>
+	</style>
+
+	<style
+		name="ScreenHeader">
+		<item
+			name="android:textColor">@color/standard_grey</item>
+	</style>
+</resources>

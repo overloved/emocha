@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string	name="app_name">emocha-miDOT</string>
+	<string name="app_language">en</string>
+	<string name="app_path_base">/emocha/midot/</string>
+	<string name="app_training_path">training/</string>
+	<string name="app_courses">courses</string>
+	<string name="app_lectures">lectures</string>
+	<string name="app_library">library</string>
+	<string name="app_odk_path">odk/</string>
+	<string name="app_odk_cache_path">.cache/</string>
+	<string name="app_odk_forms_path">forms/</string>
+	<string name="app_odk_data_path">instances/</string>
+	
+	
+	<string	name="odk_app_name">emocha-miDOT</string>
+</resources>

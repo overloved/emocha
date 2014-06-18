@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_label">22dip</dimen>
+    <dimen name="button_label_small">18dip</dimen>
+    <dimen name="standard_text_size">18dip</dimen>
+    <dimen name="default_list_row_text_size">20dip</dimen>
+    
+</resources>

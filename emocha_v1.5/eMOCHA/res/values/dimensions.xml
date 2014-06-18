@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_margin_horizontal">6dip</dimen>
+    <dimen name="screen_margin_vertical">6dip</dimen>
+    <dimen name="button_height">50dip</dimen>
+    <dimen name="button_height_small">8dip</dimen>
+    <dimen name="default_list_row_height">50dip</dimen>
+    <dimen name="default_list_row_padding_top">10dip</dimen>
+</resources>
